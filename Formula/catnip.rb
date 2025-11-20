@@ -1,8 +1,9 @@
-ass Catnip < Formula
+class Catnip < Formula
   desc "Terminal audio visualizer"
   homepage "https://github.com/noriah/catnip"
-  url "https://github.com/noriah/catnip/archive/refs/heads/main.zip"
+  url "https://github.com/noriah/catnip/archive/refs/heads/master.zip"
   version "latest"
+
   depends_on "go" => :build
   depends_on "fftw"
   depends_on "portaudio"
@@ -12,4 +13,3 @@ ass Catnip < Formula
     bin.install "bin/catnip"
   end
 end
-
